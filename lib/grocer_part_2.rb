@@ -3,7 +3,7 @@ require 'pry'
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
-    binding.pry
+    # binding.pry
     if cart.include? coupon[:item]
     item_name = coupon[:item]
     if cart[item_name][:count] >= coupon[:num]
